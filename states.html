@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            /* Add background image */
+            background-image:  url("https://raw.githubusercontent.com/ksamaarora/Travel-Website-HTML-CSS-JavaScript-PHPMySQL/main/assets/img/turkeypage.jpg");    
+            background-size: cover; /* Ensure the background image covers the entire body */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            background-attachment: fixed; /* Keep the background image fixed during scrolling */
+            color: white; /* Set default text color to be readable on the background */
+            background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+        }
+        .state {
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Use a light border for visibility */
+            padding-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Add a background color to the sections for readability */
+            padding: 20px; /* Add padding to the sections */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+        h1 {
+            color: #fff; /* Ensure heading is visible */
+            text-align: center;
+        }
+        h2 {
+            color: #ffd700; /* Make the state names stand out */
+        }
+        h3 {
+            color: #eee; /* Improve visibility of subheadings */
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #ff6347; /* Highlight important information */
+        }
+    </style>
+</head>
+<body>
+    <h1>Indian States Travel Guide</h1>
+
+    <div class="state" id="andhra-pradesh">
+        <h2>Andhra Pradesh</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Hyderabad:</strong> Charminar, Golconda Fort, Ramoji Film City</li>
+            <li><strong>Tirupati:</strong> Tirumala Venkateswara Temple</li>
+            <li><strong>Visakhapatnam:</strong> Araku Valley, Borra Caves</li>
+        </ul>
+    </div>
+    <div class="state" id="Chhattisgarh">
+        <h2>Chhattisgarh </h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Raipur:</strong>Mahant Ghasidas Memorial Museum, Vivekananda Sarovar</li>
+            <li><strong>Bilaspur:</strong> Ratanpur Fort, Kanan Pendari Zoo</li>
+            <li><strong>Jagdalpur:</strong> Chitrakote Falls</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="bihar">
+        <h2>Bihar</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Patna:</strong> Golghar, Patna Sahib Gurudwara</li>
+            <li><strong>Bodh Gaya:</strong> Mahabodhi Temple (UNESCO site)</li>
+            <li><strong>Nalanda:</strong> Nalanda University ruins</li>
+        </ul>
+    </div>
+    <div class="state" id="Delhi">
+    <h2>Delhi</h2>
+    <h3>Popular Destinations:</h3>
+    <ul>
+        <li><strong>Old Delhi:</strong>India Gate, Rashtrapati Bhavan, Akshardham Temple </li>
+        <li><strong> New Delhi:</strong> Red Fort, Jama Masjid, Qutub Minar</li>
+    </ul>
+</div>
+
+
+    <div class="state" id="west-bengal">
+        <h2>West Bengal</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Kolkata:</strong> Victoria Memorial, Howrah Bridge</li>
+            <li><strong>Darjeeling:</strong> Tiger Hill, Darjeeling Himalayan Railway</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="Rajasthan">
+        <h2>Rajasthan</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Jaipur:</strong> Amber Fort, Hawa Mahal (Pink City)</li>
+            <li><strong>Jaisalmer:</strong> Golden Fort, Desert Safari</li>
+            <li><strong>Udaipur:</strong> Lake Palace, City Palace (Lake City)</li>
+
+        </ul>
+    </div>
+    <div class="state" id="Odisha">
+        <h2>Odisha</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Puri:</strong> Jagannath Temple, Puri Beach</li>
+            <li><strong>Konark:</strong> Sun Temple (UNESCO site)</li>
+            <li><strong>Bhubaneswar:</strong>Lingaraj Temple, Udayagiri Caves</li>
+
+        </ul>
+    </div>
+    <div class="state" id="Himachal Pradesh">
+        <h2>Himachal Pradesh</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Shimla:</strong>Mall Road,Ridge</li>
+            <li><strong>Manali:</strong>Rohtang Pass,Solang Valley</li>
+            <li><strong>Dharamshala:</strong>Dalai Lama Temple Complex</li>
+        </ul>
+    </div>
+    <div class="state" id="tamil-nadu">
+        <h2>Tamil Nadu</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Chennai:</strong> Kapaleeshwarar Temple, Fort St. George, Government Museum, Marina Beach</li>
+            <li><strong>Madurai:</strong> Meenakshi Amman Temple, Thirumalai Nayakar Mahal, Vaigai Dam</li>
+            <li><strong>Mahabalipuram:</strong> Shore Temple, Mahabalipuram Beach, Five Rathas</li>
+            <li><strong>Ooty:</strong> Scenic hill station with botanical gardens and lakes</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="uttar-pradesh">
+        <h2>Uttar Pradesh</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Agra:</strong> Taj Mahal, Agra Fort</li>
+            <li><strong>Varanasi:</strong> Ghats along the Ganges, Kashi Vishwanath Temple</li>
+            <li><strong>Lucknow:</strong> Bara Imambara, Rumi Darwaza</li>
+            <li><strong>Fatehpur Sikri:</strong> Historical Mughal city with palaces and forts</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="gujarat">
+        <h2>Gujarat</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Statue of Unity:</strong> World's tallest statue honoring Sardar Vallabhbhai Patel</li>
+            <li><strong>Ahmedabad:</strong> Sabarmati Ashram, Sidi Saiyyed Mosque</li>
+            <li><strong>Somnath:</strong> Somnath Temple</li>
+            <li><strong>Rann of Kutch:</strong> Vast salt desert</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="haryana">
+        <h2>Haryana</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Kurukshetra:</strong> Brahma Sarovar, Jyotisar, Panorama Museum</li>
+            <li><strong>Gurgaon:</strong> Modern city with corporate hubs and malls</li>
+            <li><strong>Pinjore Gardens:</strong> Beautiful Mughal garden</li>
+            <li><strong>Sultanpur National Park:</strong> Bird sanctuary</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="jharkhand">
+        <h2>Jharkhand</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Ranchi:</strong> Dassam Falls, Birsa Zoological Park</li>
+            <li><strong>Jamshedpur:</strong> Jubilee Park, Dalma Wildlife Sanctuary</li>
+            <li><strong>Deoghar:</strong> Baidyanath Temple, Naulakha Mandir</li>
+            <li><strong>Netarhat:</strong> Hill station known for sunrise and sunset views</li>
+        </ul>
+    </div>
+    <div class="state" id="karnataka">
+        <h2>Karnataka</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Bangalore:</strong> Lalbagh Botanical Garden, Bangalore Palace</li>
+            <li><strong>Mysore:</strong> Mysore Palace, Chamundi Hill</li>
+            <li><strong>Hampi:</strong> Virupaksha Temple, Stone Chariot</li>
+            <li><strong>Coorg:</strong> Abbey Falls, Talakaveri</li>
+            <li><strong>Gokarna:</strong> Om Beach, Mahabaleshwar Temple</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="kerala">
+        <h2>Kerala</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Alleppey:</strong> Backwaters, Houseboats</li>
+            <li><strong>Munnar:</strong> Tea Plantations, Eravikulam National Park</li>
+            <li><strong>Kochi:</strong> Fort Kochi, Chinese Fishing Nets</li>
+            <li><strong>Wayanad:</strong> Edakkal Caves, Banasura Sagar Dam</li>
+            <li><strong>Kovalam:</strong> Lighthouse Beach, Hawah Beach</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="madhya-pradesh">
+        <h2>Madhya Pradesh</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Khajuraho:</strong> Khajuraho Group of Monuments</li>
+            <li><strong>Bhopal:</strong> Upper Lake, Bhimbetka Rock Shelters</li>
+            <li><strong>Ujjain:</strong> Mahakaleshwar Temple</li>
+            <li><strong>Gwalior:</strong> Gwalior Fort, Jai Vilas Palace</li>
+            <li><strong>Orchha:</strong> Orchha Fort Complex, Chaturbhuj Temple</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="maharashtra">
+        <h2>Maharashtra</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Mumbai:</strong> Gateway of India, Marine Drive</li>
+            <li><strong>Pune:</strong> Aga Khan Palace, Shaniwar Wada</li>
+            <li><strong>Aurangabad:</strong> Ajanta and Ellora Caves</li>
+            <li><strong>Lonavala:</strong> Bhushi Dam, Karla Caves</li>
+            <li><strong>Mahabaleshwar:</strong> Venna Lake, Pratapgad Fort</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="manipur">
+        <h2>Manipur</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Imphal:</strong> Kangla Fort, Ima Keithel (Women's Market)</li>
+            <li><strong>Loktak Lake:</strong> World's only floating lake</li>
+            <li><strong>Moirang:</strong> INA War Museum</li>
+            <li><strong>Ukhrul:</strong> Shirui Lily Peak</li>
+            <li><strong>Bishnupur:</strong> Keibul Lamjao National Park</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="meghalaya">
+        <h2>Meghalaya</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Shillong:</strong> Ward's Lake, Don Bosco Museum</li>
+            <li><strong>Cherrapunji:</strong> Living Root Bridges, Nohkalikai Falls</li>
+            <li><strong>Mawlynnong:</strong> Asia's Cleanest Village</li>
+            <li><strong>Dawki:</strong> Umngot River</li>
+            <li><strong>Jowai:</strong> Krang Suri Falls</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="mizoram">
+        <h2>Mizoram</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Aizawl:</strong> Mizoram State Museum, Durtlang Hills</li>
+            <li><strong>Champhai:</strong> Rih Dil Lake, Lengteng Wildlife Sanctuary</li>
+            <li><strong>Lunglei:</strong> Khawnglung Wildlife Sanctuary</li>
+            <li><strong>Serchhip:</strong> Vantawng Falls</li>
+            <li><strong>Thenzawl:</strong> Hmuifang Mountain</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="nagaland">
+        <h2>Nagaland</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Kohima:</strong> Kohima War Cemetery, Naga Heritage Village</li>
+            <li><strong>Dimapur:</strong> Kachari Ruins, Rangapahar Reserve Forest</li>
+            <li><strong>Mon:</strong> Longwa Village, Veda Peak</li>
+            <li><strong>Mokokchung:</strong> Langpangkong Caves</li>
+            <li><strong>Dzukou Valley:</strong> Trekking and camping</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="punjab">
+        <h2>Punjab</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Amritsar:</strong> Golden Temple, Jallianwala Bagh</li>
+            <li><strong>Chandigarh:</strong> Rock Garden, Sukhna Lake</li>
+            <li><strong>Ludhiana:</strong> Punjab Agricultural University Museum</li>
+            <li><strong>Patiala:</strong> Qila Mubarak, Sheesh Mahal</li>
+            <li><strong>Anandpur Sahib:</strong> Virasat-e-Khalsa</li>
+        </ul>
+    </div>
+    <div class="state" id="arunachal-pradesh">
+        <h2>Arunachal Pradesh</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Tawang:</strong> Tawang Monastery, Sela Pass</li>
+            <li><strong>Itanagar:</strong> Ita Fort, Ganga Lake</li>
+            <li><strong>Ziro:</strong> Ziro Valley, Talley Valley Wildlife Sanctuary</li>
+            <li><strong>Bomdila:</strong> Bomdila Monastery, Apple Orchards</li>
+            <li><strong>Dirang:</strong> Hot Water Springs, Sangti Valley</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="goa">
+        <h2>Goa</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Palolem Beach:</strong> Relaxation and water sports</li>
+            <li><strong>Basilica of Bom Jesus:</strong> UNESCO World Heritage Site</li>
+            <li><strong>Dudhsagar Waterfalls:</strong> Scenic waterfalls amidst lush greenery</li>
+            <li><strong>Anjuna Flea Market:</strong> Vibrant shopping experience</li>
+            <li><strong>Chapora Fort:</strong> Panoramic views of the Arabian Sea</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="uttarakhand">
+        <h2>Uttarakhand</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Nainital:</strong> Naini Lake, Snow View Point</li>
+            <li><strong>Mussoorie:</strong> Kempty Falls, Gun Hill Point</li>
+            <li><strong>Kedarnath:</strong> Kedarnath Temple, Trekking trails</li>
+            <li><strong>Auli:</strong> Skiing and cable car rides</li>
+            <li><strong>Rishikesh:</strong> Laxman Jhula, River Rafting</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="tripura">
+        <h2>Tripura</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Agartala:</strong> Ujjayanta Palace, Jagannath Temple</li>
+            <li><strong>Unakoti:</strong> Ancient rock carvings and sculptures</li>
+            <li><strong>Mata Tripureswari Temple:</strong> One of the 51 Shakti Peethas</li>
+            <li><strong>Neer Mahal Palace:</strong> Lake palace on Rudrasagar Lake</li>
+            <li><strong>Jampui Hills:</strong> Scenic hill station with orange plantations</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="telangana">
+        <h2>Telangana</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Hyderabad:</strong> Charminar, Golconda Fort, Ramoji Film City</li>
+            <li><strong>Nagarjuna Sagar Dam:</strong> Scenic dam with boating facilities</li>
+            <li><strong>Bhadrachalam:</strong> Sri Sita Ramachandra Swamy Temple</li>
+            <li><strong>Kuntala Waterfalls:</strong> Highest waterfall in Telangana</li>
+            <li><strong>Nizamabad:</strong> Pocharam Wildlife Sanctuary, Nizamabad Fort</li>
+        </ul>
+    </div>
+    
+    <div class="state" id="sikkim">
+        <h2>Sikkim</h2>
+        <h3>Popular Destinations:</h3>
+        <ul>
+            <li><strong>Gangtok:</strong> MG Marg, Rumtek Monastery, Tashi Viewpoint</li>
+            <li><strong>Tsomgo Lake:</strong> Glacial lake surrounded by mountains</li>
+            <li><strong>Pelling:</strong> Pemayangtse Monastery, Rabdentse Ruins</li>
+            <li><strong>Lachung:</strong> Yumthang Valley, Zero Point</li>
+            <li><strong>Nathula Pass:</strong> Indo-China border pass with stunning views</li>
+        </ul>
+    </div>
+        
+</body>
+</html>

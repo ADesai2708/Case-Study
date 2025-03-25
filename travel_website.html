@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Musafir Travel Website</title>
+    <style>
+        body {
+          background-image: url("https://raw.githubusercontent.com/ksamaarora/Travel-Website-HTML-CSS-JavaScript-PHPMySQL/main/assets/img/croatia.jpg");          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+          font-family: cursive;
+          color: white;
+          margin: 0;
+        }
+        .nav-links a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          margin-left: 20px;
+        }
+        .destination-search {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        .destination-search p {
+          color: white;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .destination-search select {
+          padding: 10px;
+          width: 300px;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          appearance: none;
+          background-color: white;
+          background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+          background-repeat: no-repeat;
+          background-position: right 10px top 50%;
+        }
+        .destination-search button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          width: 300px;
+        }
+        .destination-search p {
+          color: #1d1c1c;
+          font-size: 30px;
+          font-weight: bold;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          margin-bottom: 15px;
+          letter-spacing: 1px;
+          font-family: cursive;
+        }
+        footer {
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            text-align: center;
+            padding: 10px; 
+            font-family: Arial, sans-serif; 
+            font-size: small;
+        }
+      </style>
+      
+</head>
+<body>
+    <header> 
+        <h1>MuSafiR ItInerArY</h1>
+        <nav class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <div class="destination-search">
+        <p>Please Enter Your Destination</p><br><br>
+        <select id="stateSelect" required>
+            <option value=""  aria-required="true" selected>Select your destination</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select><br>
+       <a href="states.html"><button onclick="searchDestination()">Search</button></a>
+    </div>
+    <footer>
+      Thank you for visiting Musafir Itinerary! | Current Date and Time:
+      Tuesday, March 25, 2025, 10:13 PM IST
+    </footer>
+    <script>
+        function searchDestination() {
+            var destination = document.getElementById('stateSelect').value;
+            if (destination === "") {
+                alert("Please select a destination");
+            } else {
+                alert("Searching for: " + destination);
+            }
+        }
+    </script>
+    
+</body>
+</html>
